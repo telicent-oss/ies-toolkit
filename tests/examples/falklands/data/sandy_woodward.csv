@@ -1,0 +1,12 @@
+state,primary_name,start,end
+http://purl.org/ies/core/v0/ont/BirthState,BirthofWoodward,1932-05-01,
+http://royalnavy.mod.uk/ontology#Officer,Officer Woodward,1946,1954-05
+http://royalnavy.mod.uk/ontology#Lieutenant,Lieutenant Woodward,1954-05,1962-05
+http://royalnavy.mod.uk/ontology#LieutenantCommander,Lieutenant Commander Woodward,1962-05,1967
+http://royalnavy.mod.uk/ontology#Commander,Commander Woodward,1967,1972
+http://royalnavy.mod.uk/ontology#Captain,Captain Woodward,1972,1981-07
+http://royalnavy.mod.uk/ontology#RearAdmiral,Rear Admiral Woodward,1981-07,1984
+http://royalnavy.mod.uk/ontology#ViceAdmiral,Vice Admiral Woodward,1984,1987
+http://royalnavy.mod.uk/ontology#Admiral,Admiral Woodward,1987,1989
+http://purl.org/ies/top/v0/ont/State,Commander Of Carrier Forces,1982-04,1982-06
+http://purl.org/ies/core/v0/ont/DeathState,DeathOfWoodward,2013-08-04,

@@ -1,0 +1,164 @@
+@prefix ies_core: <http://purl.org/ies/core/v0/ont/> .
+@prefix ies_top: <http://purl.org/ies/top/v0/ont/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/data#SandyWoodward_state_0> a ies_core:BirthState ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward> ;
+    ies_top:isPartOf <http://iso8601.iso.org/19320501> .
+
+<http://example.com/data#SandyWoodward_state_10> a ies_core:DeathState ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward> ;
+    ies_top:isPartOf <http://iso8601.iso.org/20130804> .
+
+<http://example.com/data#SandyWoodward_state_1_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_1> ;
+    ies_top:isPartOf <http://iso8601.iso.org/195405> .
+
+<http://example.com/data#SandyWoodward_state_1_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_1> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1946> .
+
+<http://example.com/data#SandyWoodward_state_2_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_2> ;
+    ies_top:isPartOf <http://iso8601.iso.org/196205> .
+
+<http://example.com/data#SandyWoodward_state_2_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_2> ;
+    ies_top:isPartOf <http://iso8601.iso.org/195405> .
+
+<http://example.com/data#SandyWoodward_state_3_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_3> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1967> .
+
+<http://example.com/data#SandyWoodward_state_3_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_3> ;
+    ies_top:isPartOf <http://iso8601.iso.org/196205> .
+
+<http://example.com/data#SandyWoodward_state_4_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_4> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1972> .
+
+<http://example.com/data#SandyWoodward_state_4_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_4> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1967> .
+
+<http://example.com/data#SandyWoodward_state_5_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_5> ;
+    ies_top:isPartOf <http://iso8601.iso.org/198107> .
+
+<http://example.com/data#SandyWoodward_state_5_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_5> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1972> .
+
+<http://example.com/data#SandyWoodward_state_6_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_6> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1984> .
+
+<http://example.com/data#SandyWoodward_state_6_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_6> ;
+    ies_top:isPartOf <http://iso8601.iso.org/198107> .
+
+<http://example.com/data#SandyWoodward_state_7_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_7> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1987> .
+
+<http://example.com/data#SandyWoodward_state_7_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_7> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1984> .
+
+<http://example.com/data#SandyWoodward_state_8_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_8> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1989> .
+
+<http://example.com/data#SandyWoodward_state_8_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_8> ;
+    ies_top:isPartOf <http://iso8601.iso.org/1987> .
+
+<http://example.com/data#SandyWoodward_state_9_finish> a ies_top:State ;
+    ies_top:isAFinishOf <http://example.com/data#SandyWoodward_state_9> ;
+    ies_top:isPartOf <http://iso8601.iso.org/198206> .
+
+<http://example.com/data#SandyWoodward_state_9_start> a ies_top:State ;
+    ies_top:isAStartOf <http://example.com/data#SandyWoodward_state_9> ;
+    ies_top:isPartOf <http://iso8601.iso.org/198204> .
+
+<http://example.com/data#SandyWoodward_name> a ies_core:PersonName ;
+    ies_core:representationValue "Sandy Woodward"^^xsd:string .
+
+<http://iso8601.iso.org/19320501> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1932-05-01"^^xsd:string .
+
+<http://iso8601.iso.org/1946> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1946"^^xsd:string .
+
+<http://iso8601.iso.org/198204> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1982-04"^^xsd:string .
+
+<http://iso8601.iso.org/198206> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1982-06"^^xsd:string .
+
+<http://iso8601.iso.org/1989> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1989"^^xsd:string .
+
+<http://iso8601.iso.org/20130804> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "2013-08-04"^^xsd:string .
+
+<http://example.com/data#SandyWoodward_state_1> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#Officer> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_2> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#Lieutenant> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_3> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#LieutenantCommander> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_4> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#Commander> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_5> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#Captain> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_6> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#RearAdmiral> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_7> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#ViceAdmiral> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_8> a ies_top:State ;
+    ies_core:category <http://royalnavy.mod.uk/ontology#Admiral> ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://example.com/data#SandyWoodward_state_9> a ies_top:State ;
+    ies_top:isTemporalPartOf <http://example.com/data#SandyWoodward> .
+
+<http://iso8601.iso.org/195405> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1954-05"^^xsd:string .
+
+<http://iso8601.iso.org/196205> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1962-05"^^xsd:string .
+
+<http://iso8601.iso.org/1967> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1967"^^xsd:string .
+
+<http://iso8601.iso.org/1972> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1972"^^xsd:string .
+
+<http://iso8601.iso.org/198107> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1981-07"^^xsd:string .
+
+<http://iso8601.iso.org/1984> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1984"^^xsd:string .
+
+<http://iso8601.iso.org/1987> a ies_core:ParticularPeriod ;
+    ies_core:iso8601PeriodRepresentation "1987"^^xsd:string .
+
+<http://example.com/data#SandyWoodward> a ies_core:Person ;
+    ies_core:hasName <http://example.com/data#SandyWoodward_name> .
+

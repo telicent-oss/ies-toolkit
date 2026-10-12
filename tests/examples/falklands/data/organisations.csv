@@ -1,0 +1,4 @@
+id,name,org_type
+NationalReorganizationProcess,National Reorganization Process,http://purl.org/ies/core/v0/ont/GovernmentOrganization
+RoyalNavy,Royal Navy,http://purl.org/ies/core/v0/ont/MilitaryOrganization
+ExocetManufacturer,Aérospatiale,http://purl.org/ies/core/v0/ont/CommercialOrganization

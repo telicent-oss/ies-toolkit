@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telicent-ies-toolkit"
+version = "0.0.0"
+authors = [{ name = "Telicent Ltd", email = "opensource@telicent.io" }]
+description = "A library for building IES data, with wrapper classes generated from the IES ontology"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+readme = "README.md"
+dependencies = [
+    "rdflib>=7.0,<8.0",
+    "shortuuid>=1.0",
+    "python-dateutil>=2.9",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=9.0",
+    "ruff>=0.1",
+    "mypy>=1.7",
+    "build>=1.0",
+]
+dev = [
+    "telicent-ies-toolkit[test]",
+    "pip-tools>=7.0",
+    "pre-commit>=3.5",
+]
+
+[project.urls]
+Repository = "https://github.com/telicent-oss/ies-toolkit"
+Changelog = "https://github.com/telicent-oss/ies-toolkit/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+include = ["ies_toolkit*"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["*_generated.py"]
+
+[tool.ruff.lint]
+select = ["B", "C", "E", "F", "I", "UP", "W"]
+ignore = ["C901"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["ies_toolkit"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# Woven mixins: their self._store / self.uri / ... are supplied by the host class
+# they are mixed into, which mypy cannot see statically (would need Protocols).
+module = ["ies_toolkit.ies_core_custom", "ies_toolkit.ies_top_custom"]
+ignore_errors = true

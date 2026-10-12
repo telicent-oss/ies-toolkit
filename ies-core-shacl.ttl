@@ -1,0 +1,1465 @@
+# baseURI: http://purl.org/ies/core/v0/ont
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ies_top: <http://purl.org/ies/top/v0/ont/> .
+@prefix ies_core: <http://purl.org/ies/core/v0/ont/> .
+@prefix ies_fincom: <http://purl.org/ies/fincom/v0/ont/> .
+@prefix ies_core_sh: <http://purl.org/ies/core/v0/sh/> .
+
+ies_core_sh:AccessShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Access ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccessedShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Accessed ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccessorShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Accessor ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Account ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountAdminActivityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountAdminActivity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountClosureShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountClosure ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountDetailsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountDetails ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountHolderShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountHolder ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountInCommunicationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountInCommunication ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountOpeningShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountOpening ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountProviderShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountProvider ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccountUpdateShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:AccountUpdate ;
+    sh:severity sh:Warning .
+
+ies_core_sh:aCopyOfDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:aCopyOf ;
+    sh:class ies_core:IndividualDocument ;
+    sh:severity sh:Warning .
+
+ies_core_sh:aCopyOfRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:aCopyOf ;
+    sh:class ies_core:WorkOfDocumentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ActiveParticipationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ActiveParticipation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ActivityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Activity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ActorShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Actor ;
+    sh:severity sh:Warning .
+
+ies_core_sh:allHaveCharacteristicDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:allHaveCharacteristic ;
+    sh:class ies_top:SetOfRegularSpacetimeExtents ;
+    sh:severity sh:Warning .
+
+ies_core_sh:allHaveCharacteristicRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:allHaveCharacteristic ;
+    sh:class ies_core:Characteristic ;
+    sh:severity sh:Warning .
+
+ies_core_sh:allHaveDispositionDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:allHaveDisposition ;
+    sh:class ies_top:SetOfStates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:allHaveDispositionRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:allHaveDisposition ;
+    sh:class ies_core:Disposition ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ArbitraryPeriodShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ArbitraryPeriod ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ArrivalShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Arrival ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ArtefactShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Artefact ;
+    sh:severity sh:Warning .
+
+ies_core_sh:assessedDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:assessed ;
+    sh:class ies_core:Assessment ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AssessmentShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Assessment ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AssessorShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Assessor ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AttendanceShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Attendance ;
+    sh:severity sh:Warning .
+
+ies_core_sh:attributeDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:attribute ;
+    sh:class ies_top:Thing ;
+    sh:severity sh:Warning .
+
+ies_core_sh:BirthStateShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:BirthState ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CapabilityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Capability ;
+    sh:severity sh:Warning .
+
+ies_core_sh:categoryDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:category ;
+    sh:class ies_top:Thing ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CharacteristicShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Characteristic ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CharacterStringShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:CharacterString ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CoLocationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:CoLocation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ColorShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Color ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CommunicationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Communication ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ContinuousAccessShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ContinuousAccess ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ContractShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Contract ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CountryShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Country ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CreateShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Create ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CreatedShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Created ;
+    sh:severity sh:Warning .
+
+ies_core_sh:CreatorShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Creator ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DeathStateShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:DeathState ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DepartureShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Departure ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DestroyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Destroy ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DestroyedShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Destroyed ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DestroyerShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Destroyer ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DispositionShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Disposition ;
+    sh:severity sh:Warning .
+
+ies_core_sh:documentedByRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:documentedBy ;
+    sh:class ies_core:WorkOfDocumentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:DocumentFormatShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:DocumentFormat ;
+    sh:severity sh:Warning .
+
+ies_core_sh:durationRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:duration ;
+    sh:class ies_core:SetOfStatesWithParticularDuration ;
+    sh:severity sh:Warning .
+
+ies_core_sh:durationDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:duration ;
+    sh:class ies_top:State ;
+    sh:severity sh:Warning .
+
+ies_core_sh:EastingShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Easting ;
+    sh:severity sh:Warning .
+
+ies_core_sh:endBoundOfSetDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:endBoundOfSet ;
+    sh:class ies_core:SetOfTimeBoundedStates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:endBoundOfSetRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:endBoundOfSet ;
+    sh:class ies_core:ParticularPeriod ;
+    sh:severity sh:Warning .
+
+ies_core_sh:EndToEndActivityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:EndToEndActivity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:EndToEndTransactionShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:EndToEndTransaction ;
+    sh:severity sh:Warning .
+
+ies_core_sh:EntitlementShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Entitlement ;
+    sh:severity sh:Warning .
+
+ies_core_sh:EthnicityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Ethnicity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ExchangeShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Exchange ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ExchangeMovementShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ExchangeMovement ;
+    sh:severity sh:Warning .
+
+ies_core_sh:finiteMembershipCountDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:finiteMembershipCount ;
+    sh:class ies_core:FiniteSetOfExtents ;
+    sh:severity sh:Warning .
+
+ies_core_sh:FiniteSetOfExtentsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:FiniteSetOfExtents ;
+    sh:severity sh:Warning .
+
+ies_core_sh:formatDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:format ;
+    sh:class ies_core:WorkOfDocumentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:formatRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:format ;
+    sh:class ies_core:DocumentFormat ;
+    sh:severity sh:Warning .
+
+ies_core_sh:formatOfIndividualDocumentDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:formatOfIndividualDocument ;
+    sh:class ies_core:IndividualDocument ;
+    sh:severity sh:Warning .
+
+ies_core_sh:formatOfIndividualDocumentRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:formatOfIndividualDocument ;
+    sh:class ies_core:DocumentFormat ;
+    sh:severity sh:Warning .
+
+ies_core_sh:FusionOfIntegralPartsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:FusionOfIntegralParts ;
+    sh:severity sh:Warning .
+
+ies_core_sh:GenderShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Gender ;
+    sh:severity sh:Warning .
+
+ies_core_sh:GeoIdentityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:GeoIdentity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:GeoPointShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:GeoPoint ;
+    sh:severity sh:Warning .
+
+ies_core_sh:GovernanceActivityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:GovernanceActivity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasAssociatedRepresentationRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasAssociatedRepresentation ;
+    sh:class ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasCharacteristicDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:hasCharacteristic ;
+    sh:class ies_top:RegularSpacetimeExtent ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasCharacteristicRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasCharacteristic ;
+    sh:class ies_core:Characteristic ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasEthnicityDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:hasEthnicity ;
+    sh:class ies_core:Person ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasEthnicityRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasEthnicity ;
+    sh:class ies_core:Ethnicity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasICalRepresentationDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:hasICalRepresentation ;
+    sh:class ies_core:RecurringTimespan ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasICalRepresentationRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasICalRepresentation ;
+    sh:class ies_core:ICalRepresentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasNameRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasName ;
+    sh:class ies_core:Name ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasQuantityDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:hasQuantity ;
+    sh:class ies_core:Measure ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasSexDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:hasSex ;
+    sh:class ies_core:LivingOrganism ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasSexRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasSex ;
+    sh:class ies_core:Sex ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasThemeDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:hasTheme ;
+    sh:class ies_core:Activity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:hasThemeRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:hasTheme ;
+    sh:class ies_top:Thing ;
+    sh:severity sh:Warning .
+
+ies_core_sh:HumanMadeSystemShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:HumanMadeSystem ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ICalRepresentationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ICalRepresentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:IdentifierShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Identifier ;
+    sh:severity sh:Warning .
+
+ies_core_sh:IndividualDocumentShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:IndividualDocument ;
+    sh:severity sh:Warning .
+
+ies_core_sh:IndividualTicketShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:IndividualTicket ;
+    sh:severity sh:Warning .
+
+ies_core_sh:InformationProcessingSystemShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:InformationProcessingSystem ;
+    sh:severity sh:Warning .
+
+ies_core_sh:InformationProcessingSystemInCommunicationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:InformationProcessingSystemInCommunication ;
+    sh:severity sh:Warning .
+
+ies_core_sh:inLanguageRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:inLanguage ;
+    sh:class ies_core:Language ;
+    sh:severity sh:Warning .
+
+ies_core_sh:inLanguageDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:inLanguage ;
+    sh:class ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:inRepresentationDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:inRepresentation ;
+    sh:class ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:inRepresentationRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:inRepresentation ;
+    sh:class ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:InstalledShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Installed ;
+    sh:severity sh:Warning .
+
+ies_core_sh:IntermittentAccessShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:IntermittentAccess ;
+    sh:severity sh:Warning .
+
+ies_core_sh:isDisposedToDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:isDisposedTo ;
+    sh:class ies_top:State ;
+    sh:severity sh:Warning .
+
+ies_core_sh:isDisposedToRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:isDisposedTo ;
+    sh:class ies_core:Disposition ;
+    sh:severity sh:Warning .
+
+ies_core_sh:isIdentifiedByRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:isIdentifiedBy ;
+    sh:class ies_core:Identifier ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ISO3166_1Alpha_3Shape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ISO3166_1Alpha_3 ;
+    sh:severity sh:Warning .
+
+ies_core_sh:iso8601DurationRepresentationDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:iso8601DurationRepresentation ;
+    sh:class ies_core:SetOfStatesWithParticularDuration ;
+    sh:severity sh:Warning .
+
+ies_core_sh:iso8601PeriodRepresentationDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:iso8601PeriodRepresentation ;
+    sh:class ies_core:ParticularPeriod ;
+    sh:severity sh:Warning .
+
+ies_core_sh:isRepresentedAsRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:isRepresentedAs ;
+    sh:class ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:JourneyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Journey ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LanguageShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Language ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LanguageProficiencyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:LanguageProficiency ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LatitudeShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Latitude ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LegalOwnerShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:LegalOwner ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LegalOwnershipShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:LegalOwnership ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LifecycleActivityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:LifecycleActivity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LivingOrganismShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:LivingOrganism ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LivingSystemShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:LivingSystem ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LocationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Location ;
+    sh:severity sh:Warning .
+
+ies_core_sh:LongitudeShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Longitude ;
+    sh:severity sh:Warning .
+
+ies_core_sh:MeasureShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Measure ;
+    sh:severity sh:Warning .
+
+ies_core_sh:MeetingShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Meeting ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ModifierShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Modifier ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ModifyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Modify ;
+    sh:severity sh:Warning .
+
+ies_core_sh:MovementShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Movement ;
+    sh:severity sh:Warning .
+
+ies_core_sh:NameShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Name ;
+    sh:severity sh:Warning .
+
+ies_core_sh:NamingSchemeShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:NamingScheme ;
+    sh:severity sh:Warning .
+
+ies_core_sh:NationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Nation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:NorthingShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Northing ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ObservationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Observation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ObservedShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Observed ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ObserverShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Observer ;
+    sh:severity sh:Warning .
+
+ies_core_sh:OrganizationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Organization ;
+    sh:severity sh:Warning .
+
+ies_core_sh:OwnedLegallyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:OwnedLegally ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ParticipationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Participation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ParticipationInGovernanceShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ParticipationInGovernance ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ParticularPeriodShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ParticularPeriod ;
+    sh:severity sh:Warning .
+
+ies_core_sh:PartyInCommunicationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:PartyInCommunication ;
+    sh:severity sh:Warning .
+
+ies_core_sh:PersonShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Person ;
+    sh:severity sh:Warning .
+
+ies_core_sh:PersonInCommunicationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:PersonInCommunication ;
+    sh:severity sh:Warning .
+
+ies_core_sh:PersonNameShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:PersonName ;
+    sh:severity sh:Warning .
+
+ies_core_sh:PersonOrOrganizationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:PersonOrOrganization ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ProvisionShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Provision ;
+    sh:severity sh:Warning .
+
+ies_core_sh:publishedDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:published ;
+    sh:class ies_core:WorkOfDocumentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:publishedRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:published ;
+    sh:class ies_core:ParticularPeriod ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RecognizerShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Recognizer ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RecurringTimespanShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:RecurringTimespan ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RegionalConstituencyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:RegionalConstituency ;
+    sh:severity sh:Warning .
+
+ies_core_sh:ReplaceableLifespanShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:ReplaceableLifespan ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RepresentationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RepresentationSchemeShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:RepresentationScheme ;
+    sh:severity sh:Warning .
+
+ies_core_sh:representationValueDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:representationValue ;
+    sh:class ies_core:Representation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RightGrantingArtefactShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:RightGrantingArtefact ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RightHolderShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:RightHolder ;
+    sh:severity sh:Warning .
+
+ies_core_sh:RightToShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:RightTo ;
+    sh:severity sh:Warning .
+
+ies_core_sh:schemeMasteredInRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:schemeMasteredIn ;
+    sh:class ies_core:InformationProcessingSystem ;
+    sh:severity sh:Warning .
+
+ies_core_sh:schemeMasteredInDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:schemeMasteredIn ;
+    sh:class ies_core:NamingScheme ;
+    sh:severity sh:Warning .
+
+ies_core_sh:schemeOwnerRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:schemeOwner ;
+    sh:class ies_core:PersonOrOrganization ;
+    sh:severity sh:Warning .
+
+ies_core_sh:schemeOwnerDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:schemeOwner ;
+    sh:class ies_core:NamingScheme ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfCharacterStringsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfCharacterStrings ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfIndividualDocumentsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfIndividualDocuments ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfInformationProcessingSystemsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfInformationProcessingSystems ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfLivingOrganismsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfLivingOrganisms ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfNamesShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfNames ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfPersonsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfPersons ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfRepresentationsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfRepresentations ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfSetOfSignsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfSetOfSigns ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfSignsShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfSigns ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfStatesWithParticularDurationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfStatesWithParticularDuration ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfTimeBoundedStatesShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfTimeBoundedStates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SetOfUniverseMatesShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SetOfUniverseMates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SexShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Sex ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SignShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Sign ;
+    sh:severity sh:Warning .
+
+ies_core_sh:similarStateDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:similarState ;
+    sh:class ies_top:State ;
+    sh:severity sh:Warning .
+
+ies_core_sh:similarStateRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:similarState ;
+    sh:class ies_core:SimilarUniverseMates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SimilarUniverseMatesShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:SimilarUniverseMates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SkillShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Skill ;
+    sh:severity sh:Warning .
+
+ies_core_sh:spokenLanguageRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:spokenLanguage ;
+    sh:class ies_core:Language ;
+    sh:severity sh:Warning .
+
+ies_core_sh:spokenLanguageDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:spokenLanguage ;
+    sh:class ies_core:LanguageProficiency ;
+    sh:severity sh:Warning .
+
+ies_core_sh:startBoundOfSetDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:startBoundOfSet ;
+    sh:class ies_core:SetOfTimeBoundedStates ;
+    sh:severity sh:Warning .
+
+ies_core_sh:startBoundOfSetRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:startBoundOfSet ;
+    sh:class ies_core:ParticularPeriod ;
+    sh:severity sh:Warning .
+
+ies_core_sh:SystemShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:System ;
+    sh:severity sh:Warning .
+
+ies_core_sh:TendencyShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Tendency ;
+    sh:severity sh:Warning .
+
+ies_core_sh:TicketShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Ticket ;
+    sh:severity sh:Warning .
+
+ies_core_sh:TitleShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Title ;
+    sh:severity sh:Warning .
+
+ies_core_sh:TransactionActivityShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:TransactionActivity ;
+    sh:severity sh:Warning .
+
+ies_core_sh:TransactionParticipantShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:TransactionParticipant ;
+    sh:severity sh:Warning .
+
+ies_core_sh:VehicleShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:Vehicle ;
+    sh:severity sh:Warning .
+
+ies_core_sh:VersionNumberShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:VersionNumber ;
+    sh:severity sh:Warning .
+
+ies_core_sh:versionOfDomainShape rdf:type sh:NodeShape ;
+    sh:targetSubjectsOf ies_core:versionOf ;
+    sh:class ies_core:VersionOfDocument ;
+    sh:severity sh:Warning .
+
+ies_core_sh:versionOfRangeShape rdf:type sh:NodeShape ;
+    sh:targetObjectsOf ies_core:versionOf ;
+    sh:class ies_core:WorkOfDocumentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:VersionOfDocumentShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:VersionOfDocument ;
+    sh:severity sh:Warning .
+
+ies_core_sh:WorkOfDocumentationShape rdf:type sh:NodeShape ;
+    sh:targetClass ies_core:WorkOfDocumentation ;
+    sh:severity sh:Warning .
+
+ies_core_sh:AccessedShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Access ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Accessed isPartOf must point to a Access or one of its subclasses" ;
+] .
+
+ies_core_sh:AccessedShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_top:State ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Accessed isTemporalPartOf must point to a State or one of its subclasses" ;
+] .
+
+ies_core_sh:AccessorShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Access ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Accessor isPartOf must point to one of: Access, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:AccessorShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Accessor isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:AccountShape sh:property [
+    sh:path ies_core:isRepresentedAs ;
+    sh:class ies_core:AccountDetails ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Account isRepresentedAs must point to a AccountDetails or one of its subclasses" ;
+] .
+
+ies_core_sh:AccountShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:class ies_core:Identifier ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Account isIdentifiedBy must point to a Identifier or one of its subclasses" ;
+] .
+
+ies_core_sh:AccountAdminActivityShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Account ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "AccountAdminActivity isPartOf must point to a Account or one of its subclasses" ;
+] .
+
+ies_core_sh:AccountHolderShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "AccountHolder isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:AccountHolderShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Account ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "AccountHolder isPartOf must point to one of: Account, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:AccountInCommunicationShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:PartyInCommunication ] [ sh:class ies_core:Account ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "AccountInCommunication isPartOf must point to one of: PartyInCommunication, Account (or a subclass)" ;
+] .
+
+ies_core_sh:AccountProviderShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "AccountProvider isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:AccountProviderShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Account ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "AccountProvider isPartOf must point to one of: Account, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:ArrivalShape sh:property [
+    sh:path ies_top:isAFinishOf ;
+    sh:or ( [ sh:class ies_core:Movement ] [ sh:class ies_top:State ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Arrival isAFinishOf must point to one of: Movement, State (or a subclass)" ;
+] .
+
+ies_core_sh:ArrivalShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Location ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Arrival isPartOf must point to a Location or one of its subclasses" ;
+] .
+
+ies_core_sh:ArtefactShape sh:property [
+    sh:path ies_core:hasName ;
+    sh:class ies_core:Name ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Artefact hasName must point to a Name or one of its subclasses" ;
+] .
+
+ies_core_sh:ArtefactShape sh:property [
+    sh:path ies_core:hasCharacteristic ;
+    sh:class ies_core:Color ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Artefact hasCharacteristic must point to a Color or one of its subclasses" ;
+] .
+
+ies_core_sh:AssessorShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Assessment ] [ sh:class ies_core:InformationProcessingSystem ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Assessor isPartOf must point to one of: Assessment, InformationProcessingSystem, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:AssessorShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Assessor isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:AttendanceShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Meeting ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Attendance isPartOf must point to one of: Meeting, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:AttendanceShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Attendance isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:BirthStateShape sh:property [
+    sh:path ies_top:isAStartOf ;
+    sh:class ies_core:LivingOrganism ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "BirthState isAStartOf must point to a LivingOrganism or one of its subclasses" ;
+] .
+
+ies_core_sh:CoLocationShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Location ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "CoLocation isPartOf must point to a Location or one of its subclasses" ;
+] .
+
+ies_core_sh:CountryShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:class ies_core:ISO3166_1Alpha_3 ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Country isIdentifiedBy must point to a ISO3166_1Alpha_3 or one of its subclasses" ;
+] .
+
+ies_core_sh:CreatedShape sh:property [
+    sh:path ies_top:isAStartOf ;
+    sh:class ies_core:Artefact ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Created isAStartOf must point to a Artefact or one of its subclasses" ;
+] .
+
+ies_core_sh:CreatedShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Create ] [ sh:class ies_core:RightGrantingArtefact ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Created isPartOf must point to one of: Create, RightGrantingArtefact (or a subclass)" ;
+] .
+
+ies_core_sh:CreatorShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Creator isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:CreatorShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Organization ] [ sh:class ies_core:Create ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Creator isPartOf must point to one of: Organization, Create (or a subclass)" ;
+] .
+
+ies_core_sh:DeathStateShape sh:property [
+    sh:path ies_top:isAFinishOf ;
+    sh:class ies_core:LivingOrganism ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "DeathState isAFinishOf must point to a LivingOrganism or one of its subclasses" ;
+] .
+
+ies_core_sh:DepartureShape sh:property [
+    sh:path ies_top:isAStartOf ;
+    sh:or ( [ sh:class ies_core:Movement ] [ sh:class ies_top:State ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Departure isAStartOf must point to one of: Movement, State (or a subclass)" ;
+] .
+
+ies_core_sh:DepartureShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Location ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Departure isPartOf must point to a Location or one of its subclasses" ;
+] .
+
+ies_core_sh:DestroyedShape sh:property [
+    sh:path ies_top:isAFinishOf ;
+    sh:class ies_core:Artefact ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Destroyed isAFinishOf must point to a Artefact or one of its subclasses" ;
+] .
+
+ies_core_sh:DestroyedShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Destroy ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Destroyed isPartOf must point to a Destroy or one of its subclasses" ;
+] .
+
+ies_core_sh:DestroyerShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Destroyer isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:DestroyerShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Organization ] [ sh:class ies_core:Destroy ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Destroyer isPartOf must point to one of: Organization, Destroy (or a subclass)" ;
+] .
+
+ies_core_sh:ExchangeMovementShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Exchange ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "ExchangeMovement isPartOf must point to a Exchange or one of its subclasses" ;
+] .
+
+ies_core_sh:ExchangeMovementShape sh:property [
+    sh:path ies_top:isAStartOf ;
+    sh:class ies_core:Entitlement ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "ExchangeMovement isAStartOf must point to a Entitlement or one of its subclasses" ;
+] .
+
+ies_core_sh:ExchangeMovementShape sh:property [
+    sh:path ies_top:isAFinishOf ;
+    sh:class ies_core:Entitlement ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "ExchangeMovement isAFinishOf must point to a Entitlement or one of its subclasses" ;
+] .
+
+ies_core_sh:GeoPointShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:or ( [ sh:class ies_core:Latitude ] [ sh:class ies_core:Longitude ] [ sh:class ies_core:Northing ] [ sh:class ies_core:Easting ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "GeoPoint isIdentifiedBy must point to one of: Latitude, Longitude, Northing, Easting (or a subclass)" ;
+] .
+
+ies_core_sh:HumanMadeSystemShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:or ( [ sh:class ies_core:PartNumber ] [ sh:class ies_core:SerialNumber ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "HumanMadeSystem isIdentifiedBy must point to one of: PartNumber, SerialNumber (or a subclass)" ;
+] .
+
+ies_core_sh:IndividualDocumentShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:class ies_core:IndividualDocumentID ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "IndividualDocument isIdentifiedBy must point to a IndividualDocumentID or one of its subclasses" ;
+] .
+
+ies_core_sh:IndividualTicketShape sh:property [
+    sh:path ies_core:aCopyOf ;
+    sh:class ies_core:Ticket ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "IndividualTicket aCopyOf must point to a Ticket or one of its subclasses" ;
+] .
+
+ies_core_sh:InformationProcessingSystemInCommunicationShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:InformationProcessingSystem ] [ sh:class ies_core:PartyInCommunication ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "InformationProcessingSystemInCommunication isPartOf must point to one of: InformationProcessingSystem, PartyInCommunication (or a subclass)" ;
+] .
+
+ies_core_sh:InstalledShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:ReplaceableLifespan ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Installed isTemporalPartOf must point to a ReplaceableLifespan or one of its subclasses" ;
+] .
+
+ies_core_sh:LegalOwnerShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:LegalOwnership ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "LegalOwner isPartOf must point to a LegalOwnership or one of its subclasses" ;
+] .
+
+ies_core_sh:ModifierShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Modifier isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:ModifierShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Organization ] [ sh:class ies_core:Modify ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Modifier isPartOf must point to one of: Organization, Modify (or a subclass)" ;
+] .
+
+ies_core_sh:ModifyShape sh:property [
+    sh:path ies_top:isAFinishOf ;
+    sh:class ies_top:State ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Modify isAFinishOf must point to a State or one of its subclasses" ;
+] .
+
+ies_core_sh:ModifyShape sh:property [
+    sh:path ies_top:isAStartOf ;
+    sh:class ies_top:State ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Modify isAStartOf must point to a State or one of its subclasses" ;
+] .
+
+ies_core_sh:MovementShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Journey ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Movement isPartOf must point to a Journey or one of its subclasses" ;
+] .
+
+ies_core_sh:NationShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:class ies_core:ISO3166_1Alpha_3 ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Nation isIdentifiedBy must point to a ISO3166_1Alpha_3 or one of its subclasses" ;
+] .
+
+ies_core_sh:ObservedShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Observation ] [ sh:class ies_top:State ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Observed isPartOf must point to one of: Observation, State (or a subclass)" ;
+] .
+
+ies_core_sh:ObservedShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_top:State ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Observed isTemporalPartOf must point to a State or one of its subclasses" ;
+] .
+
+ies_core_sh:ObserverShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Observation ] [ sh:class ies_core:InformationProcessingSystem ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Observer isPartOf must point to one of: Observation, InformationProcessingSystem, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:ObserverShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Observer isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:OwnedLegallyShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:LegalOwnership ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "OwnedLegally isPartOf must point to a LegalOwnership or one of its subclasses" ;
+] .
+
+ies_core_sh:ParticipationShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Activity ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Participation isPartOf must point to a Activity or one of its subclasses" ;
+] .
+
+ies_core_sh:ParticipationInGovernanceShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:GovernanceActivity ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "ParticipationInGovernance isPartOf must point to one of: GovernanceActivity, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:ParticipationInGovernanceShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "ParticipationInGovernance isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:PartyInCommunicationShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Communication ] [ sh:class ies_core:Account ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "PartyInCommunication isPartOf must point to one of: Communication, Account (or a subclass)" ;
+] .
+
+ies_core_sh:PersonInCommunicationShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "PersonInCommunication isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:PersonInCommunicationShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:PartyInCommunication ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "PersonInCommunication isPartOf must point to a PartyInCommunication or one of its subclasses" ;
+] .
+
+ies_core_sh:PersonNameShape sh:property [
+    sh:path ies_core:inRepresentation ;
+    sh:class ies_core:PersonName ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "PersonName inRepresentation must point to a PersonName or one of its subclasses" ;
+] .
+
+ies_core_sh:ProvisionShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Artefact ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Provision isTemporalPartOf must point to a Artefact or one of its subclasses" ;
+] .
+
+ies_core_sh:ProvisionShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Account ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Provision isPartOf must point to a Account or one of its subclasses" ;
+] .
+
+ies_core_sh:RecognizerShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:or ( [ sh:class ies_core:Entitlement ] [ sh:class ies_core:Organization ] ) ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Recognizer isPartOf must point to one of: Entitlement, Organization (or a subclass)" ;
+] .
+
+ies_core_sh:RecognizerShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Person ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "Recognizer isTemporalPartOf must point to a Person or one of its subclasses" ;
+] .
+
+ies_core_sh:RightGrantingArtefactShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Entitlement ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "RightGrantingArtefact isPartOf must point to a Entitlement or one of its subclasses" ;
+] .
+
+ies_core_sh:RightGrantingArtefactShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:Artefact ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "RightGrantingArtefact isTemporalPartOf must point to a Artefact or one of its subclasses" ;
+] .
+
+ies_core_sh:RightHolderShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_core:PersonOrOrganization ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "RightHolder isTemporalPartOf must point to a PersonOrOrganization or one of its subclasses" ;
+] .
+
+ies_core_sh:RightHolderShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Entitlement ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "RightHolder isPartOf must point to a Entitlement or one of its subclasses" ;
+] .
+
+ies_core_sh:RightToShape sh:property [
+    sh:path ies_top:isTemporalPartOf ;
+    sh:class ies_top:State ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "RightTo isTemporalPartOf must point to a State or one of its subclasses" ;
+] .
+
+ies_core_sh:RightToShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:Entitlement ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "RightTo isPartOf must point to a Entitlement or one of its subclasses" ;
+] .
+
+ies_core_sh:TransactionActivityShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:EndToEndTransaction ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "TransactionActivity isPartOf must point to a EndToEndTransaction or one of its subclasses" ;
+] .
+
+ies_core_sh:TransactionParticipantShape sh:property [
+    sh:path ies_top:isPartOf ;
+    sh:class ies_core:TransactionActivity ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "TransactionParticipant isPartOf must point to a TransactionActivity or one of its subclasses" ;
+] .
+
+ies_core_sh:VersionOfDocumentShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:class ies_core:VersionNumber ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "VersionOfDocument isIdentifiedBy must point to a VersionNumber or one of its subclasses" ;
+] .
+
+ies_core_sh:WorkOfDocumentationShape sh:property [
+    sh:path ies_core:hasName ;
+    sh:class ies_core:Title ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "WorkOfDocumentation hasName must point to a Title or one of its subclasses" ;
+] .
+
+ies_core_sh:WorkOfDocumentationShape sh:property [
+    sh:path dcterms:publisher ;
+    sh:class ies_core:PersonOrOrganization ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "WorkOfDocumentation publisher must point to a PersonOrOrganization or one of its subclasses" ;
+] .
+
+ies_core_sh:WorkOfDocumentationShape sh:property [
+    sh:path dcterms:creator ;
+    sh:class ies_core:PersonOrOrganization ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "WorkOfDocumentation creator must point to a PersonOrOrganization or one of its subclasses" ;
+] .
+
+ies_core_sh:WorkOfDocumentationShape sh:property [
+    sh:path ies_core:isIdentifiedBy ;
+    sh:class ies_core:Identifier ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Warning ;
+    sh:message "WorkOfDocumentation isIdentifiedBy must point to a Identifier or one of its subclasses" ;
+] .
+

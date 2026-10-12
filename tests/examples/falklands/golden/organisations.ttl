@@ -1,0 +1,27 @@
+@prefix ies_core: <http://purl.org/ies/core/v0/ont/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/data#ExocetManufacturer> a ies_core:Organization ;
+    ies_core:category ies_core:CommercialOrganization ;
+    ies_core:hasName <http://example.com/data#ExocetManufacturer_name> .
+
+<http://example.com/data#NationalReorganizationProcess> a ies_core:Organization ;
+    ies_core:category ies_core:GovernmentOrganization ;
+    ies_core:hasName <http://example.com/data#NationalReorganizationProcess_name> .
+
+<http://example.com/data#RoyalNavy> a ies_core:Organization ;
+    ies_core:category ies_core:MilitaryOrganization ;
+    ies_core:hasName <http://example.com/data#RoyalNavy_name> .
+
+<http://example.com/data#ExocetManufacturer_name> a ies_core:Name ;
+    ies_core:category ies_core:OrganizationName ;
+    ies_core:representationValue "Aérospatiale"^^xsd:string .
+
+<http://example.com/data#NationalReorganizationProcess_name> a ies_core:Name ;
+    ies_core:category ies_core:OrganizationName ;
+    ies_core:representationValue "National Reorganization Process"^^xsd:string .
+
+<http://example.com/data#RoyalNavy_name> a ies_core:Name ;
+    ies_core:category ies_core:OrganizationName ;
+    ies_core:representationValue "Royal Navy"^^xsd:string .
+

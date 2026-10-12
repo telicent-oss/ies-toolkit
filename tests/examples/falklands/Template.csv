@@ -1,0 +1,7 @@
+﻿state,primary_name,start,end
+http://royalnavy.mod.uk/ontology#BirthState,BirthofPerson,1900-01-01,
+http://royalnavy.mod.uk/ontology#Officer,Officer Person,1940,1954-05
+http://royalnavy.mod.uk/ontology#Lieutenant,Lieutenant Person,1954-05,1962-05
+http://royalnavy.mod.uk/ontology#LieutenantCommander,Lieutenant Commander Person,1962-05,1967
+...
+http://royalnavy.mod.uk/ontology#DeathState,DeathOfPerson,2013-08-04,
